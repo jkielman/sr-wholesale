@@ -1,0 +1,154 @@
+
+.header {
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.inner {
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'interstate_blackregular';
+    text-decoration: none;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 440px;
+    text-align: center;
+
+    ul {
+        list-style: none;
+        padding:0;
+    }
+
+    @media only screen and (min-width: $desktop) {
+        font-size: 36px;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .wrapper__home--interior & {
+        margin-top: 6em;
+
+        @media only screen and (min-width: $desktop) {
+            margin-top: 0;
+        }
+    }
+
+    @media only screen and (min-width: $desktop) {
+        align-items: start;
+        align-items: self-start;
+        width: auto;
+        margin-top: 0;
+    }
+
+    a {
+        -webkit-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        -moz-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+        .container_home--position & {
+            color: $full-bk;
+
+            @media only screen and (min-width: $desktop) {
+                color: $opc-white;
+            }
+        }
+
+        .wrapper__home--interior & {
+            color: $full-bk;
+        }
+
+        &.active--nav {}
+
+        &:hover {
+            text-decoration: none;
+            color: $active;
+
+            .container_home--position & {
+                color: $active;
+
+                @media only screen and (min-width: $desktop) {
+                    color: $white;
+                }
+            }
+
+            .wrapper__home--interior & {
+                color: $active;
+            }
+        }
+    }
+
+        .current_page_item a {
+
+            color:$active;
+
+        }
+
+
+}
+
+a.navbar-brand {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 50vw;
+    margin-left: -90px;
+    margin-top: 270px;
+    background:url(assets/imgs/s-r-logo-blk.svg) no-repeat;
+    overflow:hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+
+
+    .wrapper__home--interior & {
+        margin-top: 0;
+    }
+
+    .wrapper__home--wrapper & {
+
+        background:url(assets/imgs/s-r-logo-blk.svg) no-repeat;
+
+            @media only screen and (min-width: $desktop) {
+
+                background:url(assets/imgs/s-r-logo-wht.svg) no-repeat;
+
+            }
+
+
+    }
+
+    @media only screen and (min-width: $desktop) {
+        position: relative;
+        display: block;
+        left: auto;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    img {
+        width: 100%;
+    }
+}
