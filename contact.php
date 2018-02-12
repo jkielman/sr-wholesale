@@ -19,7 +19,7 @@ Template Name: Contact
              <p>Toronto, Ont.<br>M6B 1P5</p>
           </div>
         </div>
-        <div class="row page__contact justify--center">
+        <div class="row page__contact">
           <div class="four--col">
              <?php print_custom_field('contentblocktwo:do_shortcode'); ?>
           </div>
