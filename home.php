@@ -23,25 +23,25 @@ bloginfo('charset');
       <meta itemprop="name" content="">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="">
-      <meta content='SlavinRaphael &#8211; Wholesale multi-brand sales agency' name='description'>
-      <meta content='width=device-width' name='viewport'>
+      <meta content="SlavinRaphael &#8211; Wholesale multi-brand sales agency" name="description">
+      <meta content="width=device-width" name="viewport">
       <!-- Google -->
-      <meta content='SlavinRaphael &#8211; Wholesale multi-brand sales agency' name='description'>
-      <meta content='fashion, sales, wholesale, distribution, distributors, Toronto Sales Agency, Sales Agents' name='keywords'>
-      <meta content='SlavinRaphael' name='author'>
-      <meta content='SlavinRaphael 2018' name='copyright'>
-      <meta content='SlavinRaphael' name='application-name'>
+      <meta content="SlavinRaphael &#8211; Wholesale multi-brand sales agency' name='description">
+      <meta content="fashion, sales, wholesale, distribution, distributors, Toronto Sales Agency, Sales Agents" name="keywords">
+      <meta content="SlavinRaphael" name="author">
+      <meta content="SlavinRaphael 2018" name="copyright">
+      <meta content="SlavinRaphael" name="application-name">
       <!-- Facebook -->
-      <meta content='SlavinRaphael' property='og:title'>
-      <meta content='website' property='og:type'>
-      <meta content='<?php bloginfo('template_url'); ?>/assets/imgs/share.jpg' property='og:image'>
-      <meta content='http://slavinraphael.com' property='og:url'>
-      <meta content='SlavinRaphael &#8211; Wholesale multi-brand sales agency' property='og:description'>
+      <meta content="SlavinRaphael" property="og:title">
+      <meta content="website" property="og:type">
+      <meta content="<?php bloginfo('template_url'); ?>/assets/imgs/share.jpg" property="og:image">
+      <meta content="http://slavinraphael.com" property="og:url">
+      <meta content="SlavinRaphael &#8211; Wholesale multi-brand sales agency" property="og:description">
       <!-- Twitter -->
-      <meta content='summary' name='twitter:card'>
-      <meta content='SlavinRaphael' name='twitter:title'>
-      <meta content='SlavinRaphael &#8211; Wholesale multi-brand sales agency' name='twitter:description'>
-      <meta content='<?php bloginfo('template_url'); ?>/assets/imgs/share.jpg' name='twitter:image'>
+      <meta content="summary" name="twitter:card">
+      <meta content="SlavinRaphael" name="twitter:title">
+      <meta content="SlavinRaphael &#8211; Wholesale multi-brand sales agency" name="twitter:description">
+      <meta content="<?php bloginfo('template_url'); ?>/assets/imgs/share.jpg" name="twitter:image">
 
       <?php wp_head(); ?>
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113948560-1"></script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-113948560-1');</script>
@@ -97,7 +97,7 @@ bloginfo('charset');
  <div id='controls'>
     <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
     <div class = "vid-controls">
-      <button id='btnPlayPause' class='play' title='play' accesskey="P" onclick='playPauseVideo();'></button>
+      <button id='btnPlayPause' class='play' title='play'></button>
       <button id='btnReplay' class='replay' title='replay' accesskey="R" onclick='replayVideo();'>
 <svg viewBox="0 0 12 15">
 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
