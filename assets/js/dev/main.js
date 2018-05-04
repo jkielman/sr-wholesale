@@ -20,6 +20,8 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
 
         var myVideo = document.getElementsByTagName('video')[0];
 
+        myVideo.webkitEnterFullscreen()
+
         if (myVideo.paused) {
             myVideo.play();
         } else {
@@ -34,8 +36,8 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
     if (document.getElementById('video-overlay')) {
 
 
-        var mbVideoWrapper = document.getElementById('video-overlay');
-        mobilePlayBtn = document.getElementById('mobile-play-btn'),
+        var mbVideoWrapper = document.getElementById('video-overlay'),
+            mobilePlayBtn = document.getElementById('mobile-play-btn'),
             mobileVideo = document.getElementById('mobile-video');
 
 
@@ -209,10 +211,56 @@ function runJs() {
 
     if (document.getElementById('organize-brands')) {
 
+
         var brandLink = document.querySelectorAll('.brand__element'),
             result;
 
+            Array.from(document.querySelectorAll('.client')).forEach(function(e) {
+                e.removeAttribute('srcset'),
+                e.removeAttribute('width'),
+                e.removeAttribute('height'),
+                e.removeAttribute('sizes');
+                var brandCat = e.className;
+                    e.parentNode.className = brandCat + ' client-control';
+
+                    console.log(document.querySelectorAll('.client-control').length +2);
+
+                 //  document.querySelectorAll('.client-control').parentNode.className;
+
+                    // var aTag = e;
+
+                    // aTag.parentNode.nodeName = brandCat;
+
+                  //  brandCat.parentNode.className = brandCat;
+
+
+
+                    //aTag.parentNode.className = brandCat;
+              e.className = '';
+            });
+
+
+ Array.from(document.querySelectorAll('.client-control')).forEach(function(c) {
+
+    var brandCatNew = c.className;
+    c.parentNode.className = brandCatNew;
+    c.className = '';
+
+ });
+
+
+
+           document.querySelector('.client').parentNode.classList.add('row');
+
+            //   var imageName = e.className;
+            //   console.log(imageName);
+
+            console.log(document.querySelectorAll('.brand-cat ul').length);
+
         for (var i = 0; i < brandLink.length; i++) {
+
+
+
             result = brandLink[i];
             result.addEventListener('click', function() {
 
@@ -220,10 +268,12 @@ function runJs() {
                     clientSelect = clientSelector.toLowerCase();
 
 
-                console.log(clientSelect);
+
 
 
                 Array.from(document.querySelectorAll('.client')).forEach(function(e) {
+
+
 
                     if (e) {
                         e.style.display = 'none';
@@ -300,6 +350,8 @@ function runJs() {
 
             slideContainer.innerHTML += '<div class="slide"></div>';
 
+            document.querySelectorAll('#slideshow-imgs img')[i].classList.add('content--main');
+
             document.getElementsByClassName('slide')[i].style.backgroundImage = 'url(' + document.getElementsByClassName('content--main')[i].getAttribute('src') + ')';
 
         }
@@ -333,6 +385,10 @@ function runJs() {
         for (var i = 0; i < imgCount; i++) {
 
             slideContainer.innerHTML += '<div class="slide"></div>';
+
+
+            document.querySelectorAll('#slideshow-imgs img')[i].classList.add('content--main');
+
 
             document.getElementsByClassName('slide')[i].style.backgroundImage = 'url(' + document.getElementsByClassName('content--main')[i].getAttribute('src') + ')';
 

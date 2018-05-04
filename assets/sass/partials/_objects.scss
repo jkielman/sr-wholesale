@@ -385,6 +385,18 @@ ul {
         g {
             fill: $full-bk;
         }
+
+        @media only screen and (min-width: $desktop) {
+            position: fixed;
+            bottom: 5px;
+            left: 28px;
+            width: 23px;
+             g {
+                fill: $white;
+            }
+        }
+
+
     }
 
     svg:hover {
@@ -393,9 +405,6 @@ ul {
         }
     }
 
-    @media only screen and (min-width: $desktop) {
-        display: none;
-    }
 }
 
 #video-element {

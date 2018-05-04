@@ -23,7 +23,7 @@ Template Name: Brands
 </div>
 
 
-<div class="row page__content justify--center">
+<div id ="brand-cat" class=" row page__content justify--center ">
 
 
 

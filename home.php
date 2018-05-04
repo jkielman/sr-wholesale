@@ -68,19 +68,7 @@ bloginfo('charset');
 <div id ="slideshow">
 </div>
 <div id = "slideshow-imgs" style ="display: none;">
-  <img class ="content--main" id ="content-1" src = "<?php bloginfo('template_url'); ?>/assets/imgs/home-slideshow/slide-1.jpg"/>
-  <img class ="content--main" id ="content-2" src = "<?php bloginfo('template_url'); ?>/assets/imgs/home-slideshow/slide-2.jpg"/>
-  <img class ="content--main" id ="content-4" src = "<?php bloginfo('template_url'); ?>/assets/imgs/home-slideshow/slide-4.jpg"/>
-  <img class ="content--main" id ="content-5" src = "<?php bloginfo('template_url'); ?>/assets/imgs/home-slideshow/slide-5.jpg"/>
-  <img class ="content--main" id ="content-6" src = "<?php bloginfo('template_url'); ?>/assets/imgs/home-slideshow/slide-6.jpg"/>
-  <img class ="content--main" id ="content-7" src = "<?php bloginfo('template_url'); ?>/assets/imgs/home-slideshow/slide-7.jpg"/>
-  <img class ="content--main" id ="content-8" src = "<?php bloginfo('template_url'); ?>/assets/imgs/home-slideshow/slide-8.jpg"/>
-  <img class ="content--main" id ="content-9" src = "<?php bloginfo('template_url'); ?>/assets/imgs/home-slideshow/slide-9.jpg"/>
-  <img class ="content--main" id ="content-10" src = "<?php bloginfo('template_url'); ?>/assets/imgs/home-slideshow/slide-10.jpg"/>
-  <img class ="content--main" id ="content-11" src = "<?php bloginfo('template_url'); ?>/assets/imgs/home-slideshow/slide-11.jpg"/>
-  <img class ="content--main" id ="content-12" src = "<?php bloginfo('template_url'); ?>/assets/imgs/home-slideshow/slide-12.jpg"/>
-  <img class ="content--main" id ="content-13" src = "<?php bloginfo('template_url'); ?>/assets/imgs/home-slideshow/slide-13.jpg"/>
-  <img class ="content--main" id ="content-14" src = "<?php bloginfo('template_url'); ?>/assets/imgs/home-slideshow/slide-14.jpg"/>
+<?php print_custom_field('slideshowinterior:do_shortcode'); ?>
 </div>
 <div class ="container_home--position">
   <div class="container">
